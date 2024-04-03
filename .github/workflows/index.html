@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Abouelhussein Yousef</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="btn btn-color-1" onclick="toggleDarkMode()">Dark Mode</button>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Abouelhussein Yousef</div>
+    <div class="hamburger-menu">
+      <div onclick="toggleMenu()">
+        <img src="files/menu.png" alt="menu" />
+
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li>
+          <center>
+            <h3>
+              <div onclick="toggleDarkMode()">Dark Mode</div>
+            </h3>
+          </center>
+        </li>
+
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="files/logo.png" alt="Abouelhussein Yousef profile picture" class="no-invert" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Abouelhussein Yousef</h1>
+      <p class="section__text__p2">student that is tryng to do something in his life</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('files/cv.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="files/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://linkedin.com/'" />
+        <img src="files/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="files/about-pic.png" alt="Profile picture" class="about-pic no-invert" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="" class="icon" />
+            <h3>Experience</h3>
+            <p>3 weaks in Imola Informatica <br /> Database Creation </p>
+          </div>
+          <div class="details-container">
+            <img src="file/education.png" alt='' class="icon" />
+            <h3>Education</h3>
+            <p>Technical Institute Paolini,Imola<br />Maturity Degree in S.I.A</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+
+            I attended a course in accounting in the two-year period and SIA (Business Information Systems) in the
+            three-year period, I used SQL, c++, html, css, php. I am currently attending the HIGHER TECHNICAL INSTITUTE
+            FOR SOFTWARE DEVELOPMENT WITH
+            SMART AND IOT TECHNOLOGIES ITS FITSTIC Course.
+            <br>
+          <h3>Date of birth :</h3> 07/15/2004
+          <br>
+          <h3>Citizenship :</h3> italian
+
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Digital skills</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Programming Languages</h2>
+          <div class="article-container">
+            <article>
+              <img src="files/checkmark.png" alt="Experience icon" class="icon no-invert"" />
+              <div>
+                <h3>HTML</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+            <article>
+              <img src=" files/checkmark.png" alt="Experience icon" class="icon no-invert" />
+              <div>
+                <h3>CSS</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+            <article>
+              <img src="files/checkmark.png" alt="Experience icon" class="icon no-invert" />
+              <div>
+                <h3>SQL</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+            <article>
+              <img src="files/checkmark.png" alt="Experience icon" class="icon no-invert" />
+              <div>
+                <h3>JAVA</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+            <article>
+              <img src="files/checkmark.png" alt="Experience icon" class="icon no-invert" />
+              <div>
+                <h3>C++</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+            <article>
+              <img src="files/checkmark.png" alt="Experience icon" class="icon no-invert" />
+              <div>
+                <h3>PYTHON</h3>
+                <p>In progres</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+
+          <h2 class="experience-sub-title project-title">THIS WEBSITE PORTFOLIO</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="files/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="files/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:yousefnasrsaad@gmail.com">yousefnasrsaad@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="files/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
